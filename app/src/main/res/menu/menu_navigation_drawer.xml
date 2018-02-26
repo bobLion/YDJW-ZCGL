@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_item_profile"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/nav_drawer_profile" />
+    <!--<item
+        android:id="@+id/navigation_item_hours"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="@string/nav_drawer_unusual"
+        android:visible="true" />-->
+    <item
+        android:id="@+id/navigation_item_hours_check"
+        android:icon="@drawable/ic_av_timer_black_24dp"
+        android:title="@string/nav_drawer_houres_check"
+        android:visible="false"  />
+    <item
+        android:id="@+id/navigation_item_checkhis"
+        android:icon="@drawable/ic_format_list_numbered_black_24dp"
+        android:title="@string/nav_drawer_checkhis" />
+    <item
+        android:id="@+id/navigation_item_memo"
+        android:icon="@drawable/ic_description_black_24dp"
+        android:title="@string/nav_drawer_memo" />
+    <item
+        android:id="@+id/navigation_item_offline"
+        android:icon="@drawable/ic_cloud_download_black_24dp"
+        android:title="@string/nav_drawer_offline" />
+
+</menu>

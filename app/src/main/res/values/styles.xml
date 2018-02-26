@@ -1,0 +1,192 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <!-- 应用主题 -->
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <!--material-->
+    <style name="LightLoginWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@color/btn_submit_bg</item>
+        <item name="rd_rippleColor">@color/btn_submit_hover_bg</item>
+        <item name="rd_delayClick">afterRelease</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/abc_primary_text_material_dark</item>
+    </style>
+    <style name="LightSureWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@color/btn_sure_bg</item>
+        <item name="rd_rippleColor">@color/btn_sure_hover_bg</item>
+        <item name="rd_delayClick">afterRelease</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/abc_primary_text_material_dark</item>
+    </style>
+    <style name="LightCancelWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@android:color/white</item>
+        <item name="rd_rippleColor">@color/bg_gray</item>
+        <item name="rd_delayClick">afterRelease</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="white_horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="gray_horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/main_gray_bg</item>
+    </style>
+    <style name="blue_horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/main_blue_bg</item>
+    </style>
+    <style name="transparent_vertical_line">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/transparent_white</item>
+    </style>
+
+    <style name="gray_vertical_line">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/main_gray_bg</item>
+    </style>
+
+    <style name="TextAppearance.Main.Button" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_main_title</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="TextAppearance.ListView.Content" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_listview_content</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="TextAppearance.ListView.Info.Content" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_main_title</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="TextAppearance.ResultList.Title" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_blue</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="TextAppearance.Advanced.Title" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_main_title</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="TextAppearance.Advanced.Content" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_listview_content</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+    <style name="TextAppearance.Advanced.Content1" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_pop_content</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="TextAppearance.Image.Sub" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_listview_content</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+    <style name="TextAppearance.Image.Main" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_blue</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="popup_menu_animation">
+        <item name="android:windowEnterAnimation">@anim/popup_menu_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_menu_out</item>
+    </style>
+    <style  name="LightEditText"  parent="Material.Widget.EditText.Light">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorHint">@color/abc_secondary_text_material_light</item>
+        <item name="et_dividerColor">@drawable/color_divider_light</item>
+        <item name="et_labelTextColor">@drawable/color_label_light</item>
+        <item name="et_supportTextErrorColor">#FFFF0000</item>
+        <item name="et_dividerErrorColor">#FFFF0000</item>
+    </style>
+    <style name="SimpleDialogLight" parent="Material.App.Dialog.Simple.Light">
+        <item name="di_inAnimation">@anim/anim_scale_in</item>
+        <item name="di_outAnimation">@anim/anim_scale_out</item>
+    </style>
+    <!-- view分割线样式 -->
+    <style name="horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#ffe3e3e3</item>
+        <item name="android:layout_marginLeft">@dimen/widget_container_length_10</item>
+        <item name="android:layout_marginRight">@dimen/widget_container_length_10</item>
+    </style>
+    <style name="TextAppearance.Profile.Item" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">@color/font_listview_content</item>
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+    <style name="tab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:text">请选择</item>
+        <item name="android:textColor">@color/selector_text_color_tab</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="bottom_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Bottom_Dialog</item>
+    </style>
+
+    <style name="Animation_Bottom_Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_exit</item>
+    </style>
+    <style name="grid_vertical_line">
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="Widget.TextView.Header.Sub" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.TextView.Header.Main" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_size_extra_large</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.TextView.Medium" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/font_color_main</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.TextView.Title.small" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/font_color_sub</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.TextView.ExtraMedium" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/font_size_extra_medium</item>
+        <item name="android:textColor">@color/font_color_main</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

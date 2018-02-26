@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/widget_container_length_5">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorName="BallPulseIndicator"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorColor="@color/main_blue_bg"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rel_my_log_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header"
+        android:background="@color/header">
+
+        <LinearLayout
+            android:id="@+id/ll_notice_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/widget_container_margin"
+                android:background="@mipmap/back"
+                android:clickable="true" />
+
+            <TextView
+                style="@style/Widget.TextView.Header.Sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/widget_container_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/btn_header_back" />
+        </LinearLayout>
+        <TextView
+            style="@style/Widget.TextView.Header.Main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="@string/title_setting" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_profile_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rl_button_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/widget_container_first_padding">
+        <ImageView
+            android:id="@+id/iv_profile_header"
+            android:layout_width="@dimen/icon_width_68"
+            android:layout_height="@dimen/icon_width_68"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/pic_touxiang" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_profile_header"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_profile_user_name"
+                style="@style/Widget.TextView.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="张警官" />
+
+            <TextView
+                android:id="@+id/tv_profile_department"
+                style="@style/Widget.TextView.Title.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="单位：治安支队" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/single_arrow" />
+    </RelativeLayout>
+    <View style="@style/horizontal_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout
+            android:id="@+id/rel_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rl_button_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/widget_container_first_padding"
+            android:paddingRight="@dimen/widget_container_first_padding">
+
+            <ImageView
+                android:id="@+id/iv_profile_setting"
+                android:layout_width="@dimen/icon_width_30"
+                android:layout_height="@dimen/icon_width_30"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_setting_tool" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_profile_setting"
+                android:padding="@dimen/widget_container_first_padding"
+                android:text="@string/lb_reader_set"
+                android:textAppearance="@style/Widget.TextView.ExtraMedium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/single_arrow" />
+        </RelativeLayout>
+
+        <View style="@style/horizontal_line" />-->
+
+        <RelativeLayout
+            android:id="@+id/rel_update_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rl_button_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/widget_container_first_padding"
+            android:paddingRight="@dimen/widget_container_first_padding">
+
+            <ImageView
+                android:id="@+id/iv_update_password"
+                android:layout_width="@dimen/icon_width_30"
+                android:layout_height="@dimen/icon_width_30"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_menu_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_update_password"
+                android:padding="@dimen/widget_container_first_padding"
+                android:text="@string/update_password_title"
+                android:textAppearance="@style/Widget.TextView.ExtraMedium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/single_arrow" />
+        </RelativeLayout>
+        <View style="@style/horizontal_line" />
+        <RelativeLayout
+            android:id="@+id/rel_profile_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rl_button_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/widget_container_first_padding"
+            android:paddingRight="@dimen/widget_container_first_padding">
+
+            <ImageView
+                android:id="@+id/iv_profile_about"
+                android:layout_width="@dimen/icon_width_30"
+                android:layout_height="@dimen/icon_width_30"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_profile_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_profile_about"
+                android:padding="@dimen/widget_container_first_padding"
+                android:text="@string/tv_profile_about"
+                android:textAppearance="@style/Widget.TextView.ExtraMedium"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/single_arrow" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

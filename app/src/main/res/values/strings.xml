@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">资产管理</string>
+
+    <!-- Navigation Drawer items -->
+    <string name="nav_drawer_profile">个人中心</string>
+    <string name="nav_drawer_checkhis">核查历史</string>
+    <string name="nav_drawer_memo">备忘录</string>
+    <string name="nav_drawer_offline">离线数据</string>
+    <string name="nav_drawer_unusual">工时申诉</string>
+    <string name="nav_drawer_houres_check">工时查询</string>
+
+    <!-- 通用 -->
+    <string name="msg_server_error">服务器异常</string>
+    <string name="btn_header_back">返回</string>
+    <string name="tip_load_failure_enable">服务故障&#160;&#160;点击刷新</string>
+    <!--登录-->
+    <string name="tv_login_check">自动登陆</string>
+    <string name="btn_login_submit">登录</string>
+    <string name="edt_name_hint">请输入用户名</string>
+    <string name="edt_password_hint">请输入密码</string>
+    <string name="tip_name_is_empty">用户名不能为空</string>
+    <string name="tip_password_is_empty">密码不能为空</string>
+
+    <!--设置 -->
+    <string name="title_setting">设置</string>
+    <string name="tv_profile_about">关于系统</string>
+    <string name="tv_profile_header">我</string>
+    <string name="tv_info_header">个人信息</string>
+    <string name="tv_set_info_finish">完成</string>
+    <string name="tv_info_pic">头像</string>
+    <string name="tv_info_name">姓名</string>
+    <string name="tv_info_policeno">警号</string>
+    <string name="tv_info_sex">性别</string>
+    <string name="tv_info_department">部门</string>
+    <string name="tv_info_tel">电话</string>
+    <string name="tv_info_shortno">短号</string>
+    <string name="tv_profile_department">单位：%1$s</string>
+
+    <!-- 修改密码-->
+    <string name="lb_original_password">原密码</string>
+    <string name="lb_new_password">新密码</string>
+    <string name="lb_confirm_password">确认密码</string>
+    <string name="btn_post">提交</string>
+    <string name="update_password_title">修改密码</string>
+    <string name="error_original_password_not_be_empty">原密码不能为空</string>
+    <string name="error_new_password_not_be_empty">新密码不能为空</string>
+    <string name="error_confirm_password_not_be_empty">确认密码不能为空</string>
+    <string name="error_password_not_be_same">新密码与确认密码不同</string>
+    <string name="tip_update_password_successful">密码修改成功</string>
+    <string name="tip_original_password_not_correct">原密码不正确</string>
+</resources>

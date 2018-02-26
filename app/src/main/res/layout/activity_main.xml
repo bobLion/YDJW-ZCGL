@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/draw_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_model"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/customer_bottom"
+        android:background="@android:color/white"
+        app:tl_iconGravity="TOP"
+        app:tl_iconHeight="@dimen/icon_width_20"
+        app:tl_iconMargin="@dimen/widget_container_length_2"
+        app:tl_iconWidth="@dimen/icon_width_20"
+        app:tl_indicator_bounce_enable="false"
+        app:tl_indicator_color="@color/main_blue_bg"
+        app:tl_indicator_gravity="TOP"
+        app:tl_textSelectColor="@color/main_blue_bg"
+        app:tl_textUnselectColor="@color/font_model_unselect"
+        app:tl_textsize="@dimen/font_size_12"
+        app:tl_underline_color="#DDDDDD"
+        app:tl_underline_gravity="TOP"
+        app:tl_underline_height="1dp"/>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/menu_main_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/account_header"
+        app:menu="@menu/menu_navigation_drawer" />
+</android.support.v4.widget.DrawerLayout>

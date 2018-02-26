@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/waiting_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/widget_container_length_60"
+        android:src="@mipmap/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/widget_container_length_20"
+        android:layout_marginRight="@dimen/widget_container_length_20"
+        android:layout_marginTop="@dimen/widget_container_length_60"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_width_20"
+                android:layout_height="@dimen/icon_width_20"
+                android:src="@mipmap/ic_login_name" />
+
+            <com.sailing.android.bayonet.widget.CustomEditText
+                android:id="@+id/et_login_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/widget_container_length_20"
+                android:background="@null"
+                android:digits="0123456789.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ*"
+                android:drawableRight="@mipmap/ic_edit_text_delbtn"
+                android:hint="@string/edt_name_hint"
+                android:inputType="number"
+                android:paddingRight="@dimen/widget_container_length_10"
+                android:text="10002"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/font_edit_hint" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/white_horizontal_line"
+            android:layout_marginTop="@dimen/widget_container_length_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widget_container_length_20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/icon_width_20"
+                android:layout_height="@dimen/icon_width_20"
+                android:src="@mipmap/ic_login_password" />
+
+            <com.sailing.android.bayonet.widget.CustomEditText
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/widget_container_length_20"
+                android:background="@null"
+                android:digits="0123456789.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ*"
+                android:drawableRight="@mipmap/ic_edit_text_delbtn"
+                android:hint="@string/edt_password_hint"
+                android:inputType="textPassword"
+                android:paddingRight="@dimen/widget_container_length_10"
+                android:text="11111111"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/font_edit_hint" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/white_horizontal_line"
+            android:layout_marginTop="@dimen/widget_container_length_10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/icon_width_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_auto_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/check_box_login"
+                android:text="@string/tv_login_check"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/widget_container_length_20"
+        android:layout_marginRight="@dimen/widget_container_length_20"
+        android:layout_marginTop="@dimen/widget_container_length_20"
+        android:text="@string/btn_login_submit"
+        app:v_styleId="@array/button_login_wave_color" />
+</LinearLayout>
